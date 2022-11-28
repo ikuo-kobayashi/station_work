@@ -26,5 +26,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: upload-results
-          path: station_work/test.csv
+          path: test.csv
           
