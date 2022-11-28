@@ -25,6 +25,10 @@ jobs:
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
-          name: upload-results
+          name: results
           path: test.csv
-          
+      - name: Download results
+        uses: actions/download-artifact@v3
+        with:
+          name: results
+          path: /var/tmp/         
