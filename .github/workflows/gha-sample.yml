@@ -22,3 +22,9 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run Python
         run: python python-sample.py
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: upload-results
+          path: station_work/test.csv
+          
