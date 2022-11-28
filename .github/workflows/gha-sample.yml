@@ -27,4 +27,13 @@ jobs:
         with:
           name: results
           path: test.csv
-          
+      - name: git setting
+        run: |
+          git config --local user.email "ikuo-kobayashi@jreast.co.jp"
+          git config --local user.name "ikuo-kobayashi"
+      - name: Commit files
+        run: |
+          git add .
+          git commit -m "Add csv" -a
+          git pull
+          git push origin master
