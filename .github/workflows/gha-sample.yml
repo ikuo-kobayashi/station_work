@@ -27,8 +27,4 @@ jobs:
         with:
           name: results
           path: test.csv
-      - name: Download results
-        uses: actions/download-artifact@v3
-        with:
-          name: results
-          path: /var/tmp/         
+          
